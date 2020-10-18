@@ -6,7 +6,7 @@ public class ShTask extends Task {
     String user;
     String password;
     String pathToExecutionWorkDir;
-    String pathRToExecutionFile;
+    String pathToExecutionFile;
 
     public String getUser() {
         return user;
@@ -32,12 +32,12 @@ public class ShTask extends Task {
         this.pathToExecutionWorkDir = pathToExecutionWorkDir;
     }
 
-    public String getPathRToExecutionFile() {
-        return pathRToExecutionFile;
+    public String getPathToExecutionFile() {
+        return pathToExecutionFile;
     }
 
-    public void setPathRToExecutionFile(String pathRToExecutionFile) {
-        this.pathRToExecutionFile = pathRToExecutionFile;
+    public void setPathToExecutionFile(String pathToExecutionFile) {
+        this.pathToExecutionFile = pathToExecutionFile;
     }
 
     @Override
@@ -46,7 +46,7 @@ public class ShTask extends Task {
                 "user='" + user + '\'' +
                 ", password='" + password + '\'' +
                 ", pathToExecutionWorkDir='" + pathToExecutionWorkDir + '\'' +
-                ", pathRToExecutionFile='" + pathRToExecutionFile + '\'' +
+                ", pathRToExecutionFile='" + pathToExecutionFile + '\'' +
                 '}';
     }
 
@@ -59,11 +59,11 @@ public class ShTask extends Task {
         return Objects.equals(user, shTask.user) &&
                 Objects.equals(password, shTask.password) &&
                 Objects.equals(pathToExecutionWorkDir, shTask.pathToExecutionWorkDir) &&
-                Objects.equals(pathRToExecutionFile, shTask.pathRToExecutionFile);
+                Objects.equals(pathToExecutionFile, shTask.pathToExecutionFile);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), user, password, pathToExecutionWorkDir, pathRToExecutionFile);
+        return Objects.hash(super.hashCode(), user, password, pathToExecutionWorkDir, pathToExecutionFile);
     }
 }

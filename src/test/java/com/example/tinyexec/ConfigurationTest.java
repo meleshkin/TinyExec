@@ -51,7 +51,7 @@ class ConfigurationTest {
         ShTask task = new ShTask();
         task.setUser("UserName");
         task.setPassword("aPassword");
-        task.setPathRToExecutionFile("/home/me");
+        task.setPathToExecutionFile("/home/me");
         task.setPathToExecutionWorkDir("/home/me/test.sh");
 
         task.getArgs().add(new TaskArgument("Arg1Key", "Arg1Value"));
